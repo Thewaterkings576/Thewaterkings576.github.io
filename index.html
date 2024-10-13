@@ -1,149 +1,366 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Lifee's Tutoring</title>
+
     <style>
 
- 
-   body {
+        body {
+
             font-family: Arial, sans-serif;
+
             margin: 20px;
+
             background-color: Darkgrey;
+
         }
+
         header {
+
             background-color: #4CAF50;
+
             color: white;
+
             padding: 10px 0;
+
+            display: flex;
+
+            align-items: center;
+
+        }
+
+        header img {
+
+            width: 100px; /* Adjust size as needed */
+
+            height: auto;
+
+            margin-left: 20px; /* Space from the left edge */
+
+        }
+
+        .header-text {
+
             text-align: center;
+
+            flex-grow: 1; /* Center the text in remaining space */
+
         }
-        .section {
+
+        nav {
+
+            text-align: center;
+
             margin: 20px 0;
-            padding: 15px;
-            background-color: White;
-            border: 1px solid Black;
-            border-radius: 5px;
+
         }
-        .content {
-            display: none;
-            margin-top: 10px;
-        }
-        button {
-            background-color: #4CAF50;
+
+        nav a {
+
             color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-        a {
-            color: #4CAF50;
+
             text-decoration: none;
+
+            padding: 10px 15px;
+
+            background-color: #4CAF50;
+
+            border-radius: 5px;
+
+            margin: 0 5px;
+
+            transition: background-color 0.3s, color 0.3s; /* Added transition for color */
+
         }
+
+        nav a:hover {
+
+            background-color: cyan; /* New background color on hover */
+
+            color: white; /* Keep text color white on hover */
+
+        }
+
+        .section {
+
+            display: none; /* Hide sections by default */
+
+            margin: 20px 0;
+
+            padding: 15px;
+
+            background-color: White;
+
+            border: 1px solid Black;
+
+            border-radius: 5px;
+
+        }
+
+        button {
+
+            background-color: #4CAF50;
+
+            color: white;
+
+            border: none;
+
+            padding: 10px;
+
+            cursor: pointer;
+
+            border-radius: 5px;
+
+        }
+
+        button:hover {
+
+            background-color: #45a049;
+
+        }
+
     </style>
+
 </head>
+
 <body>
+
 <header>
-    <h1>Lifee's Tutoring</h1>
-    <p>Helping Students Succeed In Technology!</p>
-</header><img src="lifee.png">
-  
-<h4> New Beginnings: The Benefits of Joining a Tutoring Class</h4>
 
-<h4>One of the primary advantages of joining a tutoring class is the personalized attention that students receive. In a typical classroom setting, teachers must cater to a diverse group of learners, which can make it challenging to address each student’s unique strengths and weaknesses. In my tutoring class, I focus on individual learning styles and tailor lessons accordingly. This personalized approach ensures that your child receives the support they need to grasp challenging concepts, reinforcing their understanding and boosting their confidence.</h4>
-    
-<h4>In conclusion, new beginnings offer an invaluable opportunity for growth and transformation. Enrolling your child in my tutoring class can provide them with the personalized support, confidence, and skills they need to thrive academically and develop a lifelong love for learning. Together, we can embark on this exciting journey, empowering your child to embrace new challenges and reach their full potential.</h4>
+    <img src="lifee.png" alt="Lifee's Tutoring Logo">
 
-<div class="section">
-    <h2>About us</h2>
-    <button onclick="toggleContent('aboutContent')">Learn More</button>
-    <div id="aboutContent" class="content">
-        <p>We are passionate about helping students in middle school and younger. Our goal is to create a fun and engaging learning environment! We have made multiple websites and we will be glad to help your child make them one. I only recommend having your child take this class if they really want to get better knowledge while still in Middle school. There is only a certain amount of time so you should make the most of it!</p>
+    <div class="header-text">
 
-<h4> ~ Dominic E Chang </h4>
+        <h1>Lifee's Tutoring</h1>
+
+        <p>Helping Students Succeed In Technology!</p>
+
     </div>
+
+</header>
+
+ 
+
+<nav>
+
+    <a href="#home" onclick="showSection('home')">Home</a>
+
+    <a href="#about" onclick="showSection('about')">About Us</a>
+
+    <a href="#subjects" onclick="showSection('subjects')">Subjects Offered</a>
+
+    <a href="#class" onclick="showSection('class')">Our Class</a>
+
+    <a href="#lesson" onclick="showSection('lesson')">Lesson Plan</a>
+
+    <a href="#contact" onclick="showSection('contact')">Contact Us</a>
+
+</nav>
+
+ 
+
+<div class="section" id="home" style="display: block;">
+
+    <h2>New Beginnings: The Benefits of Joining a Tutoring Class</h2>
+
+    <p>
+
+One of the primary advantages of joining a tutoring class is the personalized attention that students receive. In a typical classroom setting, teachers must cater to a diverse group of learners, each with unique strengths and weaknesses. This often makes it challenging to provide the tailored support that some students need to thrive.</p>
+
+ <p>In my tutoring class, I focus on individual learning styles and adapt lessons accordingly. For instance, a student who excels in visual learning may benefit from diagrams and videos, while another who learns better through auditory methods might find discussions and verbal explanations more effective. This personalized approach ensures that each child receives the support they need to grasp challenging concepts. It reinforces their understanding and boosts their confidence, transforming what may once have been a daunting subject into an engaging and achievable experience.</p>
+
+ <p>Moreover, the individualized nature of tutoring allows for ongoing assessment and adjustment of teaching methods. Unlike in a crowded classroom, where time is limited and the pace is often set to accommodate the majority, tutoring sessions can be modified in real-time based on the student's reactions and progress. If a student struggles with a particular concept, we can revisit it, using different strategies until it clicks. This flexibility not only enhances comprehension but also cultivates a love for learning, as students begin to see their own progress.</p>
+
+ <p>In conclusion, personalized tutoring offers invaluable opportunities for growth and transformation. Enrolling your child in my tutoring class can provide them with the confidence and skills they need to thrive academically and develop a lifelong love for learning. Together, we can embark on this exciting journey, empowering your child to embrace new challenges and reach their full potential.</p>
+
+
+ <p>When students enter a tutoring environment, they often find themselves in a space designed specifically for their learning needs. This tailored approach can significantly influence their academic performance and overall attitude towards education. Personalized tutoring not only addresses academic challenges but also fosters essential life skills such as resilience, problem-solving, and self-motivation.</p>
+
+ <p>Consider a student who struggles with math. In a traditional classroom, they may feel lost and overwhelmed, leading to frustration and a negative association with the subject. However, in a one-on-one tutoring setting, we can break down complex problems into manageable steps, allowing the student to regain confidence and develop a deeper understanding. This transformation is not just academic; it often reflects in their willingness to tackle other subjects and challenges in life.</p>
+
+ <p>Furthermore, tutoring provides an opportunity for students to cultivate their interests beyond the standard curriculum. For example, if a child shows a passion for coding, we can integrate this interest into their learning experience, using programming as a tool to teach critical thinking and logical reasoning. This not only makes learning more enjoyable but also helps students see the relevance of their education to their own lives and future aspirations.</p>
+
+ <p>In conclusion, the benefits of joining a tutoring class extend far beyond immediate academic improvement. They encompass a holistic approach to education that nurtures the mind and spirit, fostering not just better grades but also a greater enthusiasm for learning. By investing in personalized tutoring, you are giving your child the tools they need to succeed not only in school but throughout their lives. Together, we can empower them to embrace new challenges, explore their passions, and achieve their full potential.</p>
+
 </div>
 
-<div class="section">
+ 
+
+<div class="section" id="about">
+
+    <h2>About Us</h2>
+
+    <h3> Our tutoring center, we are deeply passionate about helping students in middle school and younger, specifically those in 5th through 7th grade. We understand that this is a crucial time in their educational journey, as they begin to explore more complex concepts in technology and develop their own interests. Our goal is to create a fun and engaging learning environment that inspires curiosity and fosters a love for learning.</h3>
+
+ <h3>We believe that when students are excited about what they are learning, they are more likely to absorb information and apply it effectively. To achieve this, we employ a variety of teaching methods tailored to meet the diverse needs of our students. By incorporating hands-on projects, interactive activities, and real-world applications of technology, we aim to make each lesson not just informative, but also enjoyable.</h3>
+
+ <h3>Our curriculum is designed to introduce students to a wide range of topics, from coding and web development to digital safety and hardware fundamentals. We encourage creativity and innovation, allowing students to explore their interests and express themselves through technology. For instance, a student might design their own website, create a simple video game, or learn how to use digital tools for storytelling. These projects not only enhance their technical skills but also build confidence and critical thinking abilities.</h3>
+
+ <h3>Moreover, we prioritize building a supportive community where students can collaborate and learn from one another. By fostering teamwork and peer interaction, we help students develop important social skills while they engage in technology-related activities. Our tutors are not just instructors; they are mentors who guide students through challenges, celebrate their successes, and inspire them to reach for their goals.</h3>
+
+ <h3>In summary, our commitment to creating a fun and engaging learning environment for middle school students goes beyond just teaching technology. We aim to empower young learners by nurturing their passion for tech, helping them build essential skills, and preparing them for a future where they can thrive in an ever-evolving digital landscape. Together, we embark on an exciting journey of discovery, growth, and empowerment.</h3>
+
+    <p>~ The Developement team</p>
+
+</div>
+
+ 
+
+<div class="section" id="subjects">
+
     <h2>Subjects Offered</h2>
-    <button onclick="toggleContent('subjectsContent')">Learn More</button>
-    <div id="subjectsContent" class="content">
-        <ul>
-            <li>css</li>
-            <li>html</li>
-            <li>hardware vs software</li>
-<li>programming</li>
-            <li>computer science</li>
-            <h4> We are thrilled to introduce my tech tutoring business, dedicated to helping students of 11 and younger, navigate the exciting world of technology! Whether it's mastering coding languages, exploring software applications, or understanding digital safety, my personalized approach ensures that each student gains the skills and confidence they need to thrive in today’s tech-driven environment. I offer engaging lessons tailored to individual interests and learning styles, making technology accessible and fun. My goal is to empower students to embrace technology as a powerful tool for learning and creativity, setting them up for success in their academic and future careers.</h4>
+
+    <ul>
+
+        <li>CSS</li>
+
+        <li>HTML</li>
+
+        <li>Hardware vs Software</li>
+
+        <li>Programming</li>
+
+        <li>Computer Science</li>
+
+    </ul>
+
+   <h3>We offer a comprehensive curriculum designed specifically for students in 5th through 7th grade, where they can explore various aspects of technology, from coding and programming to digital media creation and online safety. Our hands-on approach allows students to engage actively with the material, working on projects that spark their creativity and curiosity. Whether they are designing their first website, creating a video game, or learning the fundamentals of computer science, each lesson is crafted to be both educational and enjoyable.</h3>
+
+
+ <h3>Moreover, we recognize that building confidence is essential for students as they embark on their tech journey. Many students may feel intimidated by technology or unsure of their abilities. Our supportive and encouraging environment helps alleviate these fears. Our tutors are not just instructors; they serve as mentors, guiding students through challenges and celebrating their achievements, no matter how small. This positive reinforcement fosters a growth mindset, enabling students to tackle new concepts with enthusiasm and resilience.</h3>
+
+
+ <h3>In addition to technical skills, we emphasize critical thinking, problem-solving, and collaboration. Our students learn to approach challenges methodically, breaking down complex problems into manageable steps. Through group projects and peer collaboration, they develop essential teamwork skills that will serve them well in both academic and real-world settings.</h3>
+
+
+ <h3>Ultimately, our goal is to ensure that every student leaves our tutoring sessions not only with enhanced tech skills but also with a sense of accomplishment and self-assurance. We want them to understand that they are capable of mastering technology and that it can be a powerful tool for their future endeavors. By fostering a love for learning and a passion for technology, we prepare our students to embrace new opportunities and succeed in an increasingly digital world.</h3>
 
 </div>
-</div>
 
-<div class="section">
-    <h2>The Class</h2>
-    <button onclick="toggleContent('myContent')">Learn More</button>
-    <div id="myContent" class="content">
-        <ul>
+ 
 
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdb8zXmt1Noz1CP34m3Lt9AIpQt0EYt_58gOPoL1dcKbuaX3A/viewform" target="_blank">Click here to sign up</a>
+<div class="section" id="class">
 
-            <li> My Google Classroom: qcfyjiw</li>
-<li> Pay is 8$ - 13$ dollars an hour</li>
-<li> We work at Weekends and throughout summer break, we work in the timezone of 1:00 - 4:00 </li>
-<h3>Our dedication to helping people is driven by a genuine passion for making a positive impact in their lives. I believe that everyone deserves support and guidance, especially when facing challenges or pursuing their goals. Whether through tutoring, mentoring, or simply lending a listening ear, I strive to create a welcoming environment where individuals feel valued and understood. I am committed to empowering others by sharing knowledge, fostering growth, and encouraging them to believe in their potential. Each interaction is an opportunity to inspire and uplift, and I find great fulfillment in being a part of someone’s journey toward success and self-discovery.</h3>
-            
+    <h2>Our Classes</h2>
+<li>Dominic Chang</li>
+<li>Shawn smith</li>
+<li>Chevis Spratt</li>
+<li>Lucas Brantley</li>
+<li>Olu Kayode</li>
+<h3>We go beyond just teaching; we take the time to connect with our students on a personal level. By getting to know their strengths and challenges, we can tailor our teaching methods to suit their individual learning styles. This personalized approach helps us not only to engage students effectively but also to inspire them to reach their full potential.</h3>
 
+ <h3>Each of our educators brings a unique set of skills and experiences to the table, enriching the learning environment with diverse perspectives. Together, we collaborate to develop a curriculum that is not only educational but also relevant and exciting. Our shared passion for technology drives us to stay current with industry trends, ensuring that we provide our students with the most up-to-date knowledge and skills.</h3>
 
-        </ul>
-</div>
-<div class="section">
-    <h2>Lesson plan</h2>
-    <button onclick="toggleContent('lessonContent')">Learn More</button>
-    <div id="lessonContent" class="content">
-     <li> Parts on a computer </li>
-<li> Hardware vs software </li>
-<li> Basics of programming </li>
-<li> Website developing </li>
-<li> Presenting to parents </li>
-  </div>
+<h3>Moreover, we actively encourage open communication with both students and their families. We believe that a strong partnership between home and school is vital for student success. By involving parents in the learning process, we create a supportive network that extends beyond the classroom, enabling students to thrive academically and personally.</h3>
+
+ <h3>In summary, our dedicated team of teachers is focused on creating an engaging, supportive, and personalized learning experience for every student. We are committed to making a positive impact in their lives, helping them build not only their technical skills but also the confidence and resilience needed to navigate the challenges of the future.</h3>
+    <p>My Google Classroom: qcfyjiw</p>
+
+    <p>Pay: $8 - $13 per hour</p>
+
+    <p>Available on weekends and summer, 1:00 - 4:00 PM.</p>
 
 </div>
-    </div>
+
+ 
+
+<div class="section" id="lesson">
+
+    <h2>Lesson Plan</h2>
+
+    <ul>
+<h3>To achieve this, our lesson plans are carefully structured to include diverse instructional strategies. We integrate interactive activities, multimedia presentations, and real-world applications that cater to different learning preferences. This not only helps maintain student interest but also reinforces key concepts through multiple avenues of engagement.</h3>
+
+<h3>Additionally, we prioritize flexibility in our approach. As we progress through each lesson, we remain attuned to the needs of our students, adjusting our methods as necessary to ensure comprehension and retention. This responsive teaching style allows us to identify any areas of difficulty and provide targeted support, enabling students to overcome challenges and build confidence in their abilities.</h3>
+
+<h3>Moreover, we encourage collaboration among students, fostering a community where they can learn from one another. Group projects and peer discussions not only enhance understanding but also promote social skills and teamwork. By working together, students can share their insights and perspectives, enriching the learning experience for everyone involved.</h3>
+
+<h3>In summary, our lesson plan aims to create an optimal learning environment that accommodates the diverse needs of our students. By focusing on learning compatibility, we empower each student to thrive academically and develop a deeper appreciation for technology and its applications.</h3>
+        <li>Parts of a Computer</li>
+
+        <li>Hardware vs Software</li>
+
+        <li>Basics of Programming</li>
+
+        <li>Website Development</li>
+
+        <li>Presenting to Parents</li>
+
+    </ul>
+
 </div>
 
-<div class="section">
+ 
+
+<div class="section" id="contact">
+
     <h2>Contact Us</h2>
-    <button onclick="toggleContent('contactContent')">Learn More</button>
-    <div id="contactContent" class="content">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdb8zXmt1Noz1CP34m3Lt9AIpQt0EYt_58gOPoL1dcKbuaX3A/viewform" target="_blank">Click here to sign up</a>
-<p>Email: <a href="mailto:Dominicchang128@gmail.com">Dominicchang128@gmail.com</a></p>
-        <p>Phone: <a href="tel:+4708969043"></a>+470-896-9043</p>
-<p>Email: <a href="mailto:lucasbrat925@gmail.com">lucasbrant925@gmail.com
-        <p>Phone: <a href="tel:+67842925343"></a>+678-429-2534</p>
-<p>Email: <a href="mailto:ChevisSpratt@gmail.com">Chevisspratt@gmail.com
-        <p>Phone: <a href="tel:+6787298282"></a>+678-729-8282</p>
-<p>Email: <a href="mailto:deeshawnsmith500@gmail.com">deeshawnsmith500@gmail.com
-        <p>Phone: <a href="tel:+4044239063"></a>+4044239063</p>
-<p>Social: <a href="tel: Lifee.vr"></a>@Lifee.vr</p>
 
+    <p>Email: Dominicchang128@gmail.com</p>
 
-    </div>
+    <p>Phone: +470-896-9043</p>
 
+    <p>Email: lucasbrant925@gmail.com</p>
+
+    <p>Phone: +678-429-2534</p>
+
+    <p>Email: Chevisspratt@gmail.com</p>
+
+    <p>Phone: +678-729-8282</p>
+
+    <p>Email: deeshawnsmith500@gmail.com</p>
+
+    <p>Phone: +404-423-9063</p>
+
+    <p>Social: @Lifee.vr</p>
+
+</div>
+
+ 
 
 <script>
-    function toggleContent(contentId) {
-        const content = document.getElementById(contentId);
-        if (content.style.display === "block") {
-            content.style.display = "none";
-        } else {
-            content.style.display = "block";
+
+    // Display the home section by default when the page loads
+
+    document.addEventListener('DOMContentLoaded', function() {
+
+        showSection('home');
+
+    });
+
+ 
+
+    function showSection(sectionId) {
+
+        // Hide all sections
+
+        const sections = document.querySelectorAll('.section');
+
+        sections.forEach(section => section.style.display = 'none');
+
+ 
+
+        // Show the selected section
+
+        const selectedSection = document.getElementById(sectionId);
+
+        if (selectedSection) {
+
+            selectedSection.style.display = 'block';
+
         }
+
     }
+
 </script>
 
 </body>
+
 </html>
